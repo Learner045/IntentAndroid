@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shreya.birthdaywishes.MainActivity">
+
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="link"
+        android:onClick="link"
+        android:id="@+id/link"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="maplink"
+        android:id="@+id/maplink"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/link"
+        android:onClick="mapLink"
+        android:layout_marginStart="34dp"/>
+
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/link"
+        android:text="Dial a number"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:onClick="Dial"
+        android:id="@+id/dial" />
+
+    <Button
+        android:id="@+id/mapgeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/maplink"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:onClick="mapGeo"
+        android:text="mapgeo" />
+
+    <Button
+        android:id="@+id/pickimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dial"
+        android:layout_toStartOf="@+id/mapgeo"
+        android:onClick="PickImage"
+        android:text="pick image" />
+
+    <Button
+        android:id="@+id/sendtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pickimage"
+        android:layout_alignParentEnd="true"
+        android:onClick="sendText"
+        android:text="sendtext" />
+
+    <Button
+        android:id="@+id/sendimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dial"
+        android:layout_centerVertical="true"
+        android:onClick="sendImage"
+        android:text="sendimage" />
+
+    <Button
+        android:id="@+id/sendemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sendimage"
+        android:layout_alignEnd="@+id/pickimage"
+        android:onClick="sendEmail"
+        android:text="sendemail" />
+
+    <ImageView
+        android:id="@+id/galleryimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/sendimage"
+        android:layout_toStartOf="@+id/maplink" />
+
+
+</RelativeLayout>
